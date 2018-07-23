@@ -41,6 +41,7 @@ header ul li:first-child {
     display: flex;
     height: 2rem;
     align-items: center;
+    padding-left: 1.5rem;
 }
 
 .logo img {
@@ -203,10 +204,6 @@ nav {
     border-top: 1px solid #b3b9be;
 }
 
-.item-three {
-    background-color: #b3b9be;
-}
-
 body .side-bar .box:hover { 
     transition: all 400ms ease-in-out 20ms;
     background-color: #7faff2;
@@ -293,7 +290,7 @@ body .side-bar .box:hover {
     padding-bottom: 1.5rem;
 }
 
-.course img {
+.courses img {
     max-width: 100%;
     height: auto;
 }
@@ -307,7 +304,7 @@ body .side-bar .box:hover {
 .white-side-bar {
     background-color: #f6f5f6;
     margin-top: 18rem;
-}
+}   
 
 #tower-box {
     border-bottom: 1px solid #b3b9be;
@@ -381,6 +378,167 @@ a {
 
 /*Media Queries*/
 
-@media only screen and (max-width: 480px) {
- 
+@media only screen and (max-width: 2000px) and (min-width: 800px) {
+    .logo a {
+        display: none;
+    }
+    .mobile-item-image {
+        display: none;
+    }
+    .mobile-item-image img {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    /*header*/
+    header .logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 1.5rem;
+    }
+    header ul {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    #icons {
+        display: inline-block;
+        padding: auto 2rem;
+        vertical-align: -15%;
+        height: 2.5rem;
+        width: auto;
+    }
+    /*students w books*/
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        background-color: #b3b9be;
+    }
+    .banner-image {
+        padding: 0 0 2rem 0;
+        width: 100%;
+    }
+    .caption {
+        width: 100%;
+        padding-left: 4.5rem;
+    }
+    .caption h1 {
+        padding: 0 0 2rem 1rem; 
+        margin: 0;
+        font-size: 3rem;
+    }
+    .caption p {
+        margin-top: 0;
+        font-size: 2rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    #button {
+        margin: 1.5rem 0 2rem 1rem;
+    }
+    /*male student*/
+    .banner-extra {
+        display: none;
+    }
+    /*orientation, campus, guest*/
+    .side-bar {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .box {
+        flex-direction: column;
+        width: 100%;
+        border: none;
+        padding: 1rem;
+    }
+    .item-image {
+        display: none;
+        padding: 0;
+    }
+    .item-image img {
+        display: none;
+        padding: 0;
+    }
+    .mobile-item-image {
+        width: 100%;
+        overflow: hidden;
+        padding: 0;
+    }
+    .mobile-item-image img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        align-items: center;
+    }
+    .words {
+        margin: 1rem
+    }
+    .grey-background {
+        padding: 0;
+    }
+    .head h2 {
+        padding: 0;
+        margin: 2rem 0 1rem 0;
+        font-size: 3rem;
+    }
+    .courses img {
+        display: none;
+    }
+    .courses {
+       width: 100%;
+       padding: 0.5rem;
+    }
+    .row-one {
+        flex-direction: column;
+    }
+    .row-two {
+        flex-direction: column;
+    }
+    .coursename {
+        display: flex;
+        padding: 1rem 0 1.5rem 1rem;
+        height: 2.5rem;
+    }
+    .coursename span {
+        display: none;
+    }
+    .coursename p {
+        display: none;
+    }
+    .white-side-bar {
+        display: none;
+    }
+    .thesis h2 {
+        padding: 0 0 1rem 0;
+        margin: 0;
+    }
+    .thesis {
+        width: 100%;
+        text-align: center;
+    }
+    .banner-three {
+        padding: 2rem 0 1.5rem 0;
+        display: flex;
+        width: 100%;
+    }
+    .banner-three-video {
+       max-width: 100%;
+       padding: 0;
+       margin: 0;
+    }
+    .caption-three {
+        display: none;
+    }
+    .terms-privacy {
+        display: none;
+    }
+    .copyright h4{
+        
+    }
 }
