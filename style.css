@@ -65,6 +65,12 @@ nav {
     font-family: sans-serif;
     font-family: 'Raleway';
 }
+
+.spans a:hover {
+    transition: all 400ms ease 20ms;
+    color: #7faff2;
+}
+
 /*Readers*/
 .content {
     background-color:lightgray;
@@ -112,11 +118,17 @@ nav {
 }
 
 #button {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     background-color: gray;
     padding: .5rem 30%;
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+#button:hover {
+    transition: all 400ms ease-in-out 20ms;
+    background-color: #7faff2;
+    box-shadow: 2px 2px 10px 5px grey;
 }
 
 /*male student*/
@@ -229,12 +241,23 @@ body .side-bar .box:hover {
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
+    margin: 0;
+}
+
+.head:hover {
+    transition: all 400ms ease 2ms;
+    color: #7faff2;
 }
 
 .courses {
     width: 33.33%;
     padding: 1rem;
     overflow: hidden;
+}
+
+.courses:hover {
+    transition: all 400ms ease-in-out 20ms;
+    box-shadow: 2px 2px 10px 5px grey;
 }
 
 .row-one {
@@ -246,15 +269,18 @@ body .side-bar .box:hover {
 }
 
 .coursename {
+    width: 100%;
     background-color: #f6f5f6;
     height: 10rem;
     text-align: left;
     padding-left: 1rem;
+    padding-bottom: 1rem;
 }
 
 .coursename h3 {
     font-weight: bold;
     padding-top: 1rem;
+    padding-bottom: 1rem;
     margin: 0;
 }
 
@@ -269,4 +295,92 @@ body .side-bar .box:hover {
 
 .course img {
     max-width: 100%;
+    height: auto;
+}
+
+/*Thesis video*/
+.video-background {
+    background-color: #f6f5f6;
+    display: flex;
+}
+
+.white-side-bar {
+    background-color: #f6f5f6;
+    margin-top: 18rem;
+}
+
+#tower-box {
+    border-bottom: 1px solid #b3b9be;
+}
+
+.thesis {
+    text-align: right;
+}
+
+.banner-three {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-three-video {
+    display: block;
+    margin: 2rem 1.5rem;
+    margin-bottom: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.banner-three-video video {
+    max-width: 100%;
+}
+
+.caption-three {
+    width: 100%;
+}
+
+.caption-three h1 {
+    font-size: 3rem;
+    padding-bottom: .5rem;
+}
+
+.caption-three p {
+    font-size: 1.75rem;
+    padding-bottom: 2rem;
+    margin: 0;
+}
+
+/*Copyright*/
+footer {
+    background-color: #f6f5f6;
+    border-top: 1px solid #b3b9be;
+    padding-top: 1rem;
+}
+
+footer .copyright {
+    justify-content: space-between;
+}
+
+.copyright {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.copyright h4 {
+    padding-left: 1.5rem;
+}
+
+.terms-privacy span {
+    margin: auto 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #7faff2;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 480px) {
+ 
 }
