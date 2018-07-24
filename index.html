@@ -2,6 +2,7 @@
     <head>
         <meta charset="utf-8">
         <title>Colmar Academy</title>
+        <!--I'm not putting in the favicon correctly. Can you explain how I can put it in the root directory, ect?-->
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
@@ -11,18 +12,18 @@
 
         <header>
 
-            <div class="logo">
+            <div class="logo" role="presentation">
                 <img src="./images/ic-logo.svg" alt="logo">
-                <a href="#"><img src="./images/ic-on-campus.svg" id="icons"></a>
-                <a href="#"><img src="./images/ic-online.svg" id="icons"></a>
-                <a href="#"><img src="./images/ic-login.svg" id="icons"></a>
+                <a href="#"><img src="./images/ic-on-campus.svg" id="icons" alt="mobile icon of desk"></a>
+                <a href="#"><img src="./images/ic-online.svg" id="icons" alt="mobile icon of computer"></a>
+                <a href="#"><img src="./images/ic-login.svg" id="icons" alt="mobile icon of person"></a>
                 <ul>
                     <li>COLMAR</li>
                     <li>ACADEMY</li>
                 </ul>
             </div>
 
-            <div class="spans">
+            <div class="spans" role="presentation">
                 <nav>
                     <span><a href="#">On Campus</a></span>
                     <span><a href="#">Online</a></span>
@@ -35,16 +36,16 @@
         
         <div class="content">
 <!--Section 1-Grey-->            
-            <div class="banner">
+            <div class="banner" role="banner">
 
-                <div class="banner-image">
+                <div class="banner-image" role="presentation">
                     <img src="./images/banner.jpg" alt="banner">
                 </div>
 
-                <div class="caption">
+                <div class="caption" role="presentation">
                     <h1>Learn something new everyday</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing espant.</p>
-                    <span id="button">Start Here</span>
+                    <span id="button" role="button">Start Here</span>
                 </div>
 
             </div>
@@ -53,11 +54,11 @@
                 
                 <div class="banner-two banner-extra">
 
-                    <div class="banner-two-image">
+                    <div class="banner-two-image" role="img">
                         <img src="./images/information-main.jpg" alt="man">
                     </div>
 
-                    <div class="caption-two">
+                    <div class="caption-two" role="presentation">
                         <h1>It doesn't hurt to keep practicing</h1>
                         <p>"Curabitur vitae spanbero in ipsu, porttitor consequ. Aspanquam et commodo lectur, nec consquet neque. Sed non accusam urna. Phasellus sed sonced ex. Etiam egey magna laoreet, efficitur dolor consequet, tristique spangula."</p>
                         <span>Emanuel, Sr Strategist at Hiring.com</span>
@@ -69,15 +70,15 @@
 
             <!--1--><div class="item-one box">
                     
-                        <div class="item-image stroll">
-                            <img src="./images/information-orientation.jpg" alt="stroll">
+                        <div class="item-image stroll" role="img" id="desktop">
+                            <img src="./images/information-orientation.jpg" alt="people walking">
                         </div>
         
-                        <div class="mobile-item-image">
-                            <img src="./images/information-orientation-mobile.jpg">
+                        <div class="mobile-item-image" role="img" id="mobile">
+                            <img src="./images/information-orientation-mobile.jpg" alt="mobile longer picture of people walking">
                         </div>
         
-                        <div class="words date">
+                        <div class="words date" role="presentation">
                             <h2>Orientation date</h2>
                             <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
                             <a href="#">Read More</a>
@@ -87,15 +88,15 @@
 
             <!--2--><div class="item-two box">
 
-                        <div class="item-image map">
+                        <div class="item-image map" role="img" id="desktop">
                             <img src="./images/information-campus.jpg"  alt="map">
                         </div>
 
-                        <div class="mobile-item-image">
-                            <img src="./images/information-campus-mobile.jpg">
+                        <div class="mobile-item-image" role="img" id="mobile">
+                            <img src="./images/information-campus-mobile.jpg" alt="mobile longer picture of map">
                         </div>
 
-                        <div class="words campus">
+                        <div class="words campus" role="presentation">
                             <h2>Our campus</h2>
                             <p>Find which campus is close by you</p>
                             <a href="#">Read More</a>
@@ -105,17 +106,17 @@
 
             <!--3--><div class="item-three box">
 
-                        <div class="item-image man">
-                            <img src="./images/information-guest-lecture.jpg" alt="man">
+                        <div class="item-image man" role="img" id="desktop">
+                            <img src="./images/information-guest-lecture.jpg" alt="old man">
                         </div>
 
-                        <div class="mobile-item-image">
-                            <img src="./images/information-guest-lecture-mobile.jpg">
+                        <div class="mobile-item-image" role="img" id="mobile">
+                            <img src="./images/information-guest-lecture-mobile.jpg" alt="mobile longer picture of old man">
                         </div>
 
-                        <div class="words guest">
+                        <div class="words guest" role="presentation">
                             <h2>Our guest lecture</h2>
-                            <p>Join a keynnote with Ospanver Sack about music in medical treatment</p>
+                            <p>Join a keynnote with Oliver Sack about music in medical treatment</p>
                             <a href="#">Read More</a>
                         </div>
 
@@ -130,28 +131,28 @@
                     <h2>Start learning</h2>
                 </div>
                 
-                <div class="row-one">
-                    <div class="courses">
-                        <img src="./images/course-software.jpg" alt="software">
-                        <div class="coursename">    
+                <div class="row-one" role="presentation">
+                    <div class="courses" role="presentation">
+                        <img id="desktop" role="img" src="./images/course-software.jpg" alt="software">
+                        <div class="coursename" role="presentation">    
                             <h3>Software Engineering</h3>
                             <span>COURSES</span>
                             <p>Web Development, Mobile<br>Development, iOT, APIs</p>
                         </div>
                     </div>
 
-                    <div class="courses">
-                        <img src="./images/course-computer-art.jpg" alt="computer art">
-                        <div class="coursename">   
+                    <div class="courses" role="presentation">
+                        <img id="desktop" role="img" src="./images/course-computer-art.jpg" alt="computer art">
+                        <div class="coursename" role="presentation">   
                             <h3>Computer Art</h3>
                             <span>COURSES</span>
                             <p>Imaging & Design, Web Design,<br>Motion Graphics & Visual Effects,<br>Computer Animation</p>
                         </div>
                     </div>
 
-                    <div class="courses">
-                        <img src="./images/course-design.jpg" alt="design">
-                        <div class="coursename">
+                    <div class="courses" role="presentation">
+                        <img id="desktop" role="img" src="./images/course-design.jpg" alt="design">
+                        <div class="coursename" role="presentation">
                             <h3>Design</h3>
                             <span>COURSES</span>
                             <p>User Experience Design, User<br>Research, Visual Design</p>
@@ -159,28 +160,28 @@
                     </div>
                 </div>
 
-                <div class="row-two">
-                    <div class="courses">
-                        <img src="./images/course-data.jpg" alt="data">
-                        <div class="coursename">
+                <div class="row-two" role="presentation">
+                    <div class="courses" role="presentation">
+                        <img id="desktop" role="img" src="./images/course-data.jpg" alt="data">
+                        <div class="coursename" role="presentation">
                             <h3>Data</h3>
                             <span>COURSES</span>
                             <p>Data Science, Big Data, SQL, Data<br>Visualization</p>
                         </div>
                     </div>
 
-                    <div class="courses">
-                        <img src="./images/course-business.jpg" alt="business">
-                        <div class="coursename">
+                    <div class="courses" role="presentation">
+                        <img id="desktop" role="img" src="./images/course-business.jpg" alt="business">
+                        <div class="coursename" role="presentation">
                             <h3>Business</h3>
                             <span>COURSES</span>
                             <p>Product Development, Business<br>Development, Startup</p>
                         </div>
                     </div>
 
-                    <div class="courses">
-                        <img src="./images/course-marketing.jpg" alt="marketing">
-                        <div class="coursename">  
+                    <div class="courses" role="presentation">
+                        <img id="desktop" role="img" src="./images/course-marketing.jpg" alt="marketing">
+                        <div class="coursename" role="presentation">  
                             <h3>Marketing</h3>
                             <span>COURSES</span>
                             <p>Analytics, Content Marketing,<br>Mobile Marketing</p>
@@ -193,20 +194,20 @@
       <!--Section 4 White-->      
             <div class="video-background">
 
-                <div class="banner-three banner-two">
+                <div class="banner-three banner-two" role="presentation">
 
                     <div class="head thesis">
                         <h2>Thesis exhibit</h2>
                     </div>
 
-                    <div class="banner-three-video banner-two-image">
-                        <video controls>
+                    <div class="banner-three-video banner-two-image" role="presentation">
+                        <video role="presentation">
                             <source src="./videos/thesis.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
 
-                    <div class="caption-three caption-two">
+                    <div class="caption-three caption-two" role="presentation" id="desktop">
                         <h1>Reimagine urban</h1>
                         <p>"Curabitur vitae libero in ipsum porttitior consequet. Aliquam et commodo lectus, nec consquet neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
                     </div>
@@ -215,26 +216,26 @@
             
                 <div class="side-bar white-side-bar">
 
-            <!--1--><div class="item-one box">
+            <!--1--><div class="item-one box" role="presentation" id="desktop">
 
-                        <div class="item-image highlighter">
+                        <div class="item-image highlighter" role="img">
                             <img src="./images/thesis-fisma.jpg" alt="highlighters">
                         </div>
 
-                        <div class="words fisma">
+                        <div class="words fisma" role="presentation">
                             <h2>Fisma: Design and Prototype</h2>
                             <p>Designer showcase of new prototype product</p>
                         </div>
 
                     </div>
 
-            <!--2--><div class="item-two box" id="tower-box">
+            <!--2--><div class="item-two box" id="tower-box desktop" role="presentation">
 
-                        <div class="item-image tower">
+                        <div class="item-image tower" role="img">
                             <img src="./images/thesis-now-and-then.jpg" alt="tower">
                         </div>
 
-                        <div class="words now">
+                        <div class="words now" role="presentation">
                             <h2>Now and then</h2>
                             <p>Research study about New York</p>
                         </div>
@@ -247,9 +248,9 @@
      <!--copyright-->
             <footer>
 
-                <div class="copyright">
+                <div class="copyright" role="note">
                     <h4>© 2016 Colmar Academy. All rights reserved</h4>
-                    <div class="terms-privacy">
+                    <div class="terms-privacy" id="desktop">
                         <span><a href="#">Terms</a></span>
                         <span><a href="#">Privacy</a></span>
                     </div>
